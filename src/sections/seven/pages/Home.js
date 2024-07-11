@@ -18,8 +18,8 @@ const Home = () => {
 
   return (
     <main className='main-body'>
-  
-      <Profile userName={userName} ctiveTab={activeTab} setActiveTab={setActiveTab}/>
+
+      <Profile userName={userName} activeTab={activeTab} setActiveTab={setActiveTab}/>
       <div className='main-content'>
       {renderContent()}
       </div>
