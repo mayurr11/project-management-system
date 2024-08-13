@@ -1,17 +1,16 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
+import PropTypes from "prop-types"; // Import PropTypes for validation
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faComment, faEllipsisV, faHeart, faShare } from "@fortawesome/free-solid-svg-icons";
 import avatar from "../assets/images/avatar.jpg";
 import "./Post.css";
 
 const Post = ({ userName, image, caption, date }) => {
-   const [showCommentInput, setShowCommentInput] = useState(false);
-//    const [showShareOptions, setShowShareOptions] = useState(false);
+  const [showCommentInput, setShowCommentInput] = useState(false);
 
   const showComment = () => {
     setShowCommentInput(!showCommentInput);
-  }
-
+  };
 
   return (
     <div className="post-container">
@@ -24,7 +23,7 @@ const Post = ({ userName, image, caption, date }) => {
           </div>
         </div>
         <div className="options">
-          <button type='button'>
+          <button type="button">
             <FontAwesomeIcon icon={faEllipsisV} />
           </button>
         </div>
@@ -34,25 +33,33 @@ const Post = ({ userName, image, caption, date }) => {
         <img src={image} alt="post" />
       </div>
       <div className="post-foot">
-        <button className="like">
-            <FontAwesomeIcon icon={faHeart} className="fa-icon red"/>
+        <button type="button" className="like">
+          <FontAwesomeIcon icon={faHeart} className="fa-icon red" />
         </button>
-        <button onClick={showComment} className="comment">
-            <FontAwesomeIcon icon={faComment} className="fa-icon"/>
+        <button type="button" onClick={showComment} className="comment">
+          <FontAwesomeIcon icon={faComment} className="fa-icon" />
         </button>
-        <button className="share">
-            <FontAwesomeIcon icon={faShare} className="fa-icon blue"/>
+        <button type="button" className="share">
+          <FontAwesomeIcon icon={faShare} className="fa-icon blue" />
         </button>
         {showCommentInput && (
-        <form className="comment-input">
-          {/* Render your comment input component here */}
-          <input type="text" placeholder="Write a comment..." />
-          <button type="submit" className="comment-sent-button">Post</button>
-        </form>
-      )}
+          <form className="comment-input">
+            {/* Render your comment input component here */}
+            <input type="text" placeholder="Write a comment..." />
+            <button type="submit" className="comment-sent-button">Post</button>
+          </form>
+        )}
       </div>
     </div>
   );
+};
+
+// Add PropTypes validation
+Post.propTypes = {
+  userName: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  caption: PropTypes.string.isRequired,
+  date: PropTypes.string.isRequired,
 };
 
 export default Post;

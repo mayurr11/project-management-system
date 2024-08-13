@@ -1,9 +1,10 @@
-import React from 'react'
-import Home from './pages/Home'
+import React from 'react';
+import Home from './pages/Home';
+
 export default function View() {
   return (
     <div>
-      <Home/>
+      <Home />
     </div>
-  )
+  );
 }

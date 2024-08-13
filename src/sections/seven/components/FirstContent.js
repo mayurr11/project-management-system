@@ -49,7 +49,7 @@ const FirstContent = () => {
           </li>
           <li>
             <FontAwesomeIcon icon={faBriefcase} className="fa-icon" />
-            {designation + " at " + workplace}
+            {`${designation} at ${workplace}`}
           </li>
           <li>
             <FontAwesomeIcon icon={faGraduationCap} className="fa-icon" />

@@ -1,11 +1,10 @@
 body {
-    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
-    "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /* font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,  "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   }
   .dashboard {
     padding: 20px;
   }
-  
+
   .add-chart-btn {
     background-color: blue;
     color: white;
@@ -17,20 +16,20 @@ body {
     border-radius: 9px;
     margin-bottom: 20px;
   }
-  
+
   .divider {
     width: 100%;
     height: 2px;
     background-color: white;
     margin: 20px 0;
   }
-  
+
   .task-stats {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
   }
-  
+
   .task-box {
     background-color: #f0f0f0;
     padding: 20px;
@@ -42,23 +41,23 @@ body {
     justify-content: center;
     position: relative;
     border-radius: 10px;
-    
+
   }
-  
+
   .task-box-header {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+
   .task-box-header span {
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
     margin-bottom: 10px;
   }
-  
+
   .task-box-icons {
     display: none;
     gap: 5px;
@@ -69,34 +68,34 @@ body {
     top: 0px;
     right: 0px;
   }
-  
+
   .task-box:hover .task-box-icons {
     display: flex;
   }
-  
+
   .task-box-icons svg {
     cursor: pointer;
     font-size: 18px;
     color: black;
   }
   .task-box .number {
-    font-size: 40px; 
+    font-size: 40px;
     margin: 5px 0; }
-  
+
     .task-box .filter-icon {
-      font-size: 20px; } 
-      
-  
+      font-size: 20px; }
+
+
   .task-box div {
     margin: 5px 0;
   }
-  
+
   .charts {
     display: flex;
     justify-content: space-around;
     margin-bottom: 20px;
   }
-  
+
   .chart-container {
     width: 45%;
     background: #fff;
@@ -105,4 +104,3 @@ body {
     padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-  

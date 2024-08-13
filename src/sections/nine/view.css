@@ -1,20 +1,20 @@
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
   }
-  
+
   .app-container {
     padding: 20px;
   }
-  
+
   .header {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
   }
-  
+
   .user-initials {
     background-color: pink;
     border-radius: 50%;
@@ -26,15 +26,15 @@ body {
     font-weight: bold;
     margin-right: 10px;
   }
-  
+
   .header-text {
     font-size: 24px;
   }
-  
+
   .main-content {
     margin-top: 20px;
   }
-  
+
   .add-task-button {
     background-color: blue;
     color: white;
@@ -43,7 +43,7 @@ body {
     margin-bottom: 20px;
     cursor: pointer;
   }
-  
+
   .task-section {
     margin-bottom: 20px;
     background-color: #ffffff;
@@ -51,43 +51,43 @@ body {
     border-radius: 8px;
     padding: 10px;
   }
-  
+
   .task-section h2 {
     font-size: 18px;
     margin-bottom: 10px;
   }
-  
+
   .task-item {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
   }
-  
+
   .task-item input {
     margin-right: 10px;
   }
-  
+
   .task-name {
     flex-grow: 1;
   }
-  
+
   .task-date {
     color: grey;
     margin-left: 10px;
   }
-  
+
   .task-project {
     background-color: lightgrey;
     padding: 2px 5px;
     border-radius: 5px;
     margin-left: 10px;
   }
-  
+
   .add-task, .add-section-button {
     color: blue;
     cursor: pointer;
   }
-  
+
   .add-task-button, .add-section-button {
     display: inline-block;
     margin-top: 10px;
@@ -95,7 +95,7 @@ body {
     border: none;
     font-size: 14px;
   }
-  
+
   .modal {
     position: fixed;
     top: 50%;
@@ -105,16 +105,16 @@ body {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
-  
+
   .modal-content {
     display: flex;
     flex-direction: column;
   }
-  
+
   .modal-content label {
     margin-bottom: 10px;
   }
-  
+
   .add-task-button {
     background-color: #007bff;
     color: white;
@@ -122,11 +122,11 @@ body {
     padding: 10px 20px;
     cursor: pointer;
   }
-  
+
   .add-task-button:hover {
     background-color: #0056b3;
   }
-  
+
   /* Priority Styling */
   .task-priority {
     padding: 5px;
@@ -134,15 +134,15 @@ body {
     border-radius: 3px;
     color: white; /* Default text color */
   }
-  
+
   .priority-low {
     background-color: green;
   }
-  
+
   .priority-medium {
     background-color: orange;
   }
-  
+
   .priority-high {
     background-color: red;
   }
@@ -155,8 +155,7 @@ body {
     margin-left: 10px;
     border-radius: 5px;
   }
-  
+
   .delete-task-button:hover {
     background-color: #ff1a1a;
   }
-  
